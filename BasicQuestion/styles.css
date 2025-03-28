@@ -1,0 +1,208 @@
+body {
+    background-color: #1E1E2E;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/* header  */
+.menu {
+    background: #ff3300;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.menu li {
+    position: relative;
+}
+.menu > li {
+    padding: 10px 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.submenu, .sub-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ff3300;
+    list-style: none;
+    padding: 0;
+    display: none;
+    min-width: 150px;
+}
+.submenu li {
+    position: relative;
+}
+.submenu a, .sub-submenu a {
+    padding: 10px;
+    color: white;
+    display: block;
+}
+.submenu a:hover, .sub-submenu a:hover {
+    background: black;
+}
+.sub-submenu {
+    left: 100%;
+    top: 0;
+}
+.menu li:hover > .submenu, .submenu li:hover > .sub-submenu {
+    display: block;
+}
+
+
+
+
+
+/* timeline  */
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #444;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: -2px;
+}
+.container {
+    position: relative;
+    padding: 10px 40px;
+    background: inherit;
+    width: 100%;
+}
+.container .icon {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: #444;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 18px;
+}
+.primary .icon { background: #007bff; }
+.danger .icon { background: #dc3545; }
+.success .icon { background: #28a745; }
+.icon{
+    position: relative;
+    z-index: 1;
+}
+.content {
+    padding: 20px;
+    background: #2A2A3A;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 15px;
+}
+.content::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #2A2A3A transparent transparent;
+}
+.content h3 {
+    margin: 0;
+}
+.content p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+
+
+
+/* Glassmorphism effect  */
+.glassmorphism {
+    background: url('./astro-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.185);
+    border-radius: 15px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.or-text {
+    color: white;
+    margin: 15px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.facebook, .google {
+    width: 48%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
