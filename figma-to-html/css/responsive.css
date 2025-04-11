@@ -1,0 +1,75 @@
+
+
+
+
+/* Responsive Styles for Header Bar */
+/* Default Styles */
+
+@media (max-width: 992px) {
+    .header-bar {
+        padding: 15px 30px;
+    }
+    .slider{
+        width: 100%;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .header-bar {
+        padding: 12px 15px;
+    }
+    
+    .mobile-bottom-menu i {
+        font-size: 1.1rem;
+    }
+}
+
+/* Fix for Bootstrap Collapse */
+.collapse {
+    transition: all 0.3s ease;
+}
+
+/* Accessibility Improvements */
+.nav-link:focus,
+.navbar-toggler:focus,
+.icons i:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Animation for mobile menu */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#mobileMenu.show {
+    animation: slideDown 0.3s ease forwards;
+}
+
+/* inspriation  */
+
+@media (max-width: 1024px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 200px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: auto;
+    }
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

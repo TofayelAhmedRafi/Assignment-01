@@ -3,9 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Furniro</title>
+    
+    <!-- Link Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Google Fonts  -->
+     
 </head>
 <body>
+
+    <!-- Header -->
+    <header class="header-container">
+        <div class="header-bar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Furniro Logo">
+            </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- Desktop Menu -->
+            <nav class="desktop-nav">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Icons -->
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+
+        <!-- Collapsible Mobile Menu -->
+        <div class="collapse id="mobileMenu">
+            <ul class="nav flex-column text-center p-3">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+
+        
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span>New Arrival</span>
+                <h1>Discover Our New Collection</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- browse-section  -->
+    <section class="browse-section">
+        <h2>Browse The Range</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="divider"></div>
+        <div class="categories">
+            <div class="category">
+                <img src="./images/dining.png" alt="Dining">
+                <h3>Dining</h3>
+            </div>
+            <div class="category">
+                <img src="./images/living.png" alt="Living">
+                <h3>Living</h3>
+            </div>
+            <div class="category">
+                <img src="./images/bedroom.png" alt="Bedroom">
+                <h3>Bedroom</h3>
+            </div>
+        </div>
+        <br>
+    </section>
+    <!-- End browse-section  -->
+     <br>
+    <!-- Featured Products Section -->
+    <section id="OurProducts">
+        <div class="our-products-area">
+            <h2>Our Products</h2>
+            <p>We offer a wide range of products to meet your needs.</p>
+            <div class="products-grid">
+
+                <!-- Product Card  -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/leviosa.png" alt="Syltherine cafe chair">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Syltherine</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <div class="prices">
+                            <p class="product-price">Rp 2.500.000</p>
+                            <p class="original-price">Rp 3.500.000</p>
+                        </div>
+                    </div> 
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="action-icons">
+                            <span class="action-icon"><i class="fa-solid fa-share-nodes"></i>Share</span>
+                            <span class="action-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</span>
+                            <span class="action-icon"><i class="fa-regular fa-heart"></i>Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/leviosa.png" alt="Syltherine cafe chair">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Syltherine</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <div class="prices">
+                            <p class="product-price">Rp 2.500.000</p>
+                            <p class="original-price">Rp 3.500.000</p>
+                        </div>
+                    </div> 
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="action-icons">
+                            <span class="action-icon"><i class="fa-solid fa-share-nodes"></i>Share</span>
+                            <span class="action-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</span>
+                            <span class="action-icon"><i class="fa-regular fa-heart"></i>Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/leviosa.png" alt="Syltherine cafe chair">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Syltherine</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <div class="prices">
+                            <p class="product-price">Rp 2.500.000</p>
+                            <p class="original-price">Rp 3.500.000</p>
+                        </div>
+                    </div> 
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="action-icons">
+                            <span class="action-icon"><i class="fa-solid fa-share-nodes"></i>Share</span>
+                            <span class="action-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</span>
+                            <span class="action-icon"><i class="fa-regular fa-heart"></i>Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/leviosa.png" alt="Syltherine cafe chair">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Syltherine</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <div class="prices">
+                            <p class="product-price">Rp 2.500.000</p>
+                            <p class="original-price">Rp 3.500.000</p>
+                        </div>
+                    </div> 
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="action-icons">
+                            <span class="action-icon"><i class="fa-solid fa-share-nodes"></i>Share</span>
+                            <span class="action-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</span>
+                            <span class="action-icon"><i class="fa-regular fa-heart"></i>Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/leviosa.png" alt="Syltherine cafe chair">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Syltherine</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <div class="prices">
+                            <p class="product-price">Rp 2.500.000</p>
+                            <p class="original-price">Rp 3.500.000</p>
+                        </div>
+                    </div> 
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="action-icons">
+                            <span class="action-icon"><i class="fa-solid fa-share-nodes"></i>Share</span>
+                            <span class="action-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</span>
+                            <span class="action-icon"><i class="fa-regular fa-heart"></i>Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/leviosa.png" alt="Syltherine cafe chair">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Syltherine</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <div class="prices">
+                            <p class="product-price">Rp 2.500.000</p>
+                            <p class="original-price">Rp 3.500.000</p>
+                        </div>
+                    </div> 
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="action-icons">
+                            <span class="action-icon"><i class="fa-solid fa-share-nodes"></i>Share</span>
+                            <span class="action-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</span>
+                            <span class="action-icon"><i class="fa-regular fa-heart"></i>Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/leviosa.png" alt="Syltherine cafe chair">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Syltherine</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <div class="prices">
+                            <p class="product-price">Rp 2.500.000</p>
+                            <p class="original-price">Rp 3.500.000</p>
+                        </div>
+                    </div> 
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="action-icons">
+                            <span class="action-icon"><i class="fa-solid fa-share-nodes"></i>Share</span>
+                            <span class="action-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</span>
+                            <span class="action-icon"><i class="fa-regular fa-heart"></i>Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/leviosa.png" alt="Syltherine cafe chair">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Syltherine</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <div class="prices">
+                            <p class="product-price">Rp 2.500.000</p>
+                            <p class="original-price">Rp 3.500.000</p>
+                        </div>
+                    </div> 
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="action-icons">
+                            <span class="action-icon"><i class="fa-solid fa-share-nodes"></i>Share</span>
+                            <span class="action-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</span>
+                            <span class="action-icon"><i class="fa-regular fa-heart"></i>Like</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button class="show-more">Show More</button>
+    </section>
+    <!-- End Featured Products Section -->
+    <!-- inspiration -->
+    <br>
+    <section class="container">
+        <div class="text-section">
+          <h1>50+ Beautiful rooms inspiration</h1>
+          <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
+          <button class="explore-btn">Explore More</button>
+        </div>
+        <div class="slider">
+          <div class="slide">
+            <img src="../images/1.png" alt="Room 1">
+            <div class="caption">
+              <small>01 &mdash; Bed Room</small>
+              <h2>Inner Peace</h2>
+              <button class="arrow-btn">→</button>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../images/1.png" alt="Room 2">
+            <div class="dots">
+              <div class="dot active"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../images/1.png" alt="Room 3">
+          </div>
+        </div>
+      </section>
+        <br>
     
+    <!-- End inspiration -->
+
+    <!-- galary  -->
+    <section class="gallery-section">
+        <h1>Share your setup with<br><span>#FuniroFurniture</span></h1>
+        <div class="gallery">
+          <div class="item item1"><img src="../images/Rectangle 36.png" alt=""></div>
+          <div class="item item2"><img src="../images/Rectangle 37.png" alt=""></div>
+          <div class="item item3"><img src="../images/Rectangle 38.png" alt=""></div>
+          <div class="item item4"><img src="../images/Rectangle 39.png" alt=""></div>
+          <div class="item item5"><img src="../images/Rectangle 40.png" alt=""></div>
+          <div class="item item6"><img src="../images/Rectangle 41.png" alt=""></div>
+          <div class="item item7"><img src="../images/Rectangle 43.png" alt=""></div>
+          <div class="item item8"><img src="../images/Rectangle 44.png" alt=""></div>
+          <div class="item item9"><img src="../images/Rectangle 45.png" alt=""></div>
+        </div>
+      </section>
+    <!-- End galary  -->
+    <br>
+
+     <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Funiro.</h2>
+                <p>400 University Drive Suite 200 Coral Gables, <br>FL 33134 USA</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Help</h3>
+                <a href="#">Payment Options</a>
+                <a href="#">Returns</a>
+                <a href="#">Privacy Policies</a>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Enter Your Email Address">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2025 Funiro. All rights reserved by Tofayel Ahmed</p>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+    <!-- Bottom Fixed Menu for Mobile -->
+    <div class="mobile-bottom-menu d-lg-none">
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

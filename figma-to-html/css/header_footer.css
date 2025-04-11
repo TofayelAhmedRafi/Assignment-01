@@ -1,0 +1,219 @@
+/* style.css - Main Stylesheet */
+
+/* Base Styles */
+:root {
+    --primary-color: #121212;
+    --secondary-color: #666;
+    --accent-color: #e89f71;
+    --light-color: #f9f1e7;
+    --white: #fff;
+    --border-color: #d9d9d9;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 60px; /* Space for mobile bottom menu */
+}
+
+/* Header Styles */
+.header-container {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 24px;
+    width: auto;
+}
+
+/* Navigation Styles */
+.desktop-nav ul.nav {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.desktop-nav .nav-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.desktop-nav .nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Icons Styles */
+.icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icons i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icons i:hover {
+    color: var(--accent-color);
+}
+
+/* Mobile Menu Styles */
+.navbar-toggler {
+    background: transparent;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-toggler i {
+    color: var(--primary-color);
+}
+
+#mobileMenu {
+    background-color: var(--white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#mobileMenu .nav-link {
+    padding: 12px 0;
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#mobileMenu .nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Mobile Bottom Menu */
+.mobile-bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    display: none;
+    justify-content: space-around;
+    padding: 15px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+}
+
+.mobile-bottom-menu i {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .header-bar {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        display: none;
+    }
+
+    .mobile-bottom-menu {
+        display: flex;
+    }
+
+    .logo img {
+        height: 20px;
+    }
+}
+
+/* Bootstrap Overrides */
+.collapse:not(.show) {
+    display: none;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+
+
+/* footer Section  */
+.footer {
+    background-color: #fff;
+    padding: 40px 80px;
+    border-top: 1px solid #e0e0e0;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-section h3 {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer-section p, .footer-section a {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+.newsletter input {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+}
+.newsletter button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #000;
+}
